@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
+using System.Data.Entity;
 
 namespace Vidly.Models
 {
@@ -9,6 +10,8 @@ namespace Vidly.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Customer> MyProperty { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection")
         {

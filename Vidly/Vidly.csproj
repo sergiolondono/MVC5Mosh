@@ -165,9 +165,27 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708181302470_InitialModel.cs" />
+    <Compile Include="Migrations\201708181302470_InitialModel.Designer.cs">
+      <DependentUpon>201708181302470_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708181327053_AddIsSubcribedToCustomer.cs" />
+    <Compile Include="Migrations\201708181327053_AddIsSubcribedToCustomer.Designer.cs">
+      <DependentUpon>201708181327053_AddIsSubcribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708181330555_AddMembershiptype.cs" />
+    <Compile Include="Migrations\201708181330555_AddMembershiptype.Designer.cs">
+      <DependentUpon>201708181330555_AddMembershiptype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708181338335_PopulateMembershipTypes.cs" />
+    <Compile Include="Migrations\201708181338335_PopulateMembershipTypes.Designer.cs">
+      <DependentUpon>201708181338335_PopulateMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -237,6 +255,20 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201708181302470_InitialModel.resx">
+      <DependentUpon>201708181302470_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708181327053_AddIsSubcribedToCustomer.resx">
+      <DependentUpon>201708181327053_AddIsSubcribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708181330555_AddMembershiptype.resx">
+      <DependentUpon>201708181330555_AddMembershiptype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708181338335_PopulateMembershipTypes.resx">
+      <DependentUpon>201708181338335_PopulateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
