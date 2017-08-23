@@ -193,6 +193,26 @@
     <Compile Include="Migrations\201708221523192_UpdateMembershipType.Designer.cs">
       <DependentUpon>201708221523192_UpdateMembershipType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708232115208_UpdateModelCustomer.cs" />
+    <Compile Include="Migrations\201708232115208_UpdateModelCustomer.Designer.cs">
+      <DependentUpon>201708232115208_UpdateModelCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708232119436_Update_ModelCustomer.cs" />
+    <Compile Include="Migrations\201708232119436_Update_ModelCustomer.Designer.cs">
+      <DependentUpon>201708232119436_Update_ModelCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708232134314_UpdateModelMovie.cs" />
+    <Compile Include="Migrations\201708232134314_UpdateModelMovie.Designer.cs">
+      <DependentUpon>201708232134314_UpdateModelMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708232135114_PopulateEntityMovie.cs" />
+    <Compile Include="Migrations\201708232135114_PopulateEntityMovie.Designer.cs">
+      <DependentUpon>201708232135114_PopulateEntityMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708232149288_Populate_EntityMovie.cs" />
+    <Compile Include="Migrations\201708232149288_Populate_EntityMovie.Designer.cs">
+      <DependentUpon>201708232149288_Populate_EntityMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -256,6 +276,7 @@
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -289,6 +310,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708221523192_UpdateMembershipType.resx">
       <DependentUpon>201708221523192_UpdateMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708232115208_UpdateModelCustomer.resx">
+      <DependentUpon>201708232115208_UpdateModelCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708232119436_Update_ModelCustomer.resx">
+      <DependentUpon>201708232119436_Update_ModelCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708232134314_UpdateModelMovie.resx">
+      <DependentUpon>201708232134314_UpdateModelMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708232135114_PopulateEntityMovie.resx">
+      <DependentUpon>201708232135114_PopulateEntityMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708232149288_Populate_EntityMovie.resx">
+      <DependentUpon>201708232149288_Populate_EntityMovie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
