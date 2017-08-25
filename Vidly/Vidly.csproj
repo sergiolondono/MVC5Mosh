@@ -213,9 +213,30 @@
     <Compile Include="Migrations\201708232149288_Populate_EntityMovie.Designer.cs">
       <DependentUpon>201708232149288_Populate_EntityMovie.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708252002319_addGeneros.cs" />
+    <Compile Include="Migrations\201708252002319_addGeneros.Designer.cs">
+      <DependentUpon>201708252002319_addGeneros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708252003463_addTest.cs" />
+    <Compile Include="Migrations\201708252003463_addTest.Designer.cs">
+      <DependentUpon>201708252003463_addTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708252005076_updateGenres.cs" />
+    <Compile Include="Migrations\201708252005076_updateGenres.Designer.cs">
+      <DependentUpon>201708252005076_updateGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708252034053_updateGenres2.cs" />
+    <Compile Include="Migrations\201708252034053_updateGenres2.Designer.cs">
+      <DependentUpon>201708252034053_updateGenres2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708252044006_PopulateGenres.cs" />
+    <Compile Include="Migrations\201708252044006_PopulateGenres.Designer.cs">
+      <DependentUpon>201708252044006_PopulateGenres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
@@ -329,6 +350,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708232149288_Populate_EntityMovie.resx">
       <DependentUpon>201708232149288_Populate_EntityMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708252002319_addGeneros.resx">
+      <DependentUpon>201708252002319_addGeneros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708252003463_addTest.resx">
+      <DependentUpon>201708252003463_addTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708252005076_updateGenres.resx">
+      <DependentUpon>201708252005076_updateGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708252034053_updateGenres2.resx">
+      <DependentUpon>201708252034053_updateGenres2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708252044006_PopulateGenres.resx">
+      <DependentUpon>201708252044006_PopulateGenres.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

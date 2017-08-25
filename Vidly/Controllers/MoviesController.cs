@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -49,7 +50,7 @@ namespace Vidly.Controllers
 
         public ActionResult Index()
         {
-            var movies = _context.Movies.ToList();
+            var movies = _context.Movies.Include(m => m.Genre).ToList();
 
             return View(movies);
         }
@@ -65,8 +66,10 @@ namespace Vidly.Controllers
 
         public ActionResult New()
         {
+            var genres = _context.Genres.ToList();
             var viewModel = new MoviesFormViewModel
             {
+                Genres = genres,
                 Action = "New Movie"
             };
 
@@ -101,6 +104,7 @@ namespace Vidly.Controllers
 
             var viewModel = new MoviesFormViewModel
             {
+                Genres = _context.Genres.ToList(),
                 Movie = movie,
                 Action = "Edit Movie"
             };
