@@ -20,27 +20,26 @@ namespace Vidly.Controllers
 
         protected override void Dispose(bool disposing)
         {
-             _context.Dispose();    
+            _context.Dispose();
         }
         //
         // GET: /Customers/
         public ViewResult Index()
         {
-            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
+            // var customers = _context.Customers.Include(c => c.MembershipType).ToList();
+            // return View(customers);
 
-            //var customers = getCustomers();
-
-            return View(customers);
+            return View();
         }
 
         public ActionResult Details(int id)
         {
             var customer = _context.Customers.Include(c => c.MembershipType).SingleOrDefault(c => c.Id == id);
             if (customer == null)
-                    return HttpNotFound();
+                return HttpNotFound();
 
             return View(customer);
-                                 
+
         }
 
         public ActionResult New()
@@ -80,7 +79,7 @@ namespace Vidly.Controllers
                 customerInDb.MembershipType = customer.MembershipType;
                 customerInDb.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;
             }
-            
+
             _context.SaveChanges();
             return RedirectToAction("Index", "Customers");
         }
@@ -99,5 +98,5 @@ namespace Vidly.Controllers
 
             return View("CustomerForm", viewModel);
         }
-	}
+    }
 }
