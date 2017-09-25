@@ -17,16 +17,18 @@ textarea {
 }
 
 /* styles for validation helpers */
-.field-validation-error {
-    color: #b94a48;
+.field-validation-error,
+label.error {
+    color: red;
 }
 
 .field-validation-valid {
     display: none;
 }
 
-input.input-validation-error {
-    border: 1px solid #b94a48;
+input.input-validation-error,
+input.error {
+    border: 1px solid red;
 }
 
 input[type="checkbox"].input-validation-error {
