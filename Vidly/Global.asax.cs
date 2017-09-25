@@ -23,6 +23,11 @@ namespace Vidly
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
 
+        public static void RegisterRoutes(RouteCollection routes)
+        {
+            routes.IgnoreRoute("elmah.axd");
+        }
+
         protected void Application_Error()
         {
             var ex = Server.GetLastError();
